@@ -14,8 +14,10 @@ import re
 import sys
 import threading
 import traceback
-from torch._six import string_classes
+# from torch._six import string_classes
+from six import string_types
 
+string_classes = string_types
 int_classes = (bool, int)
 # string_classes = 
 
